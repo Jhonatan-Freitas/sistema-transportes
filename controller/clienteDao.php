@@ -1,6 +1,7 @@
 
 <?php
 
+
 function inserirCliente($cliente, $con){
     $nome = $cliente['nome'];
     $cpf = $cliente['cpf'];
@@ -53,6 +54,6 @@ function editarCliente($cliente, $con){
     $stmt->bindParam(2, $cpf);
     $stmt->bindParam(3, $telefone);
     $stmt->bindParam(4, $email);
-    $stmt->bindParam(5), $id);
+    $stmt->bindParam(5, $id);
     $stmt->execute();
 }
