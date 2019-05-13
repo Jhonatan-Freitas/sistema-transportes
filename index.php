@@ -2,7 +2,7 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
-		<title>Alfa Desenvolvimento</title>
+		<title>Rico Transportes</title>
 		<!-- Página responsiva -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Bootstrap CSS -->
@@ -15,7 +15,7 @@
 		<header class="container">
 			<div class="row">
 				<div class="col-md-3 col-sm-6">
-					<a href="index.html"><img src="img/logo.png" style="float: left;"></a>
+					<a href="index.html"><img class="logo" src="img/logo.png" style="float: left;"></a>
 				</div>
 				<div class="col-md-9">
 					<a href="index2.html"></a>
@@ -34,6 +34,7 @@
 			       			 	<li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
 				    			<li class="nav-item"><a class="nav-link" href="#funcionario">Funcionários</a></li>
 				    			<li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+								<li class="nav-item"><a class="nav-link" href="login.php">Entrar</a></li>
 			      			</ul>
 			    		</div>
 			  		</nav>
@@ -94,13 +95,13 @@
                               <td>97151-6955</td>
                             </tr>
                             <tr>
-                              <td>Joaquim Rocha</td>
-                              <td>joaqRocha@brino.com</td>
+                              <td>Jean Santos</td>
+                              <td>txdbr@gmail.com</td>
                               <td>9762-8422</td>
                             </tr>
                             <tr>
-                              <td>Maria Ceciliana</td>
-                              <td>marizinha@gmail.com</td>
+                              <td>André Barros</td>
+                              <td>andrebarros@gmail.com</td>
                               <td>7169-2406</td>
                             </tr>
 		          </table>
@@ -132,7 +133,7 @@
       		</div>	
                 <!--Fim do formulario-->
 	  			<!--Inicio do Rodapé-->
-	  			<footer class="container">
+	  			<footer class="container-fluid">
 	  				<div class="row">
 		  				<div class="col-md-4 bg-dark p-2 text-center"><a href="index.html"><p class="text-white"> Home</p></a></div>
 						<div class="col-md-4 bg-dark p-2 text-center"><p class="text-white"> &copy; Copyright 2018 Alfa Desenvolvimento</p></div>
