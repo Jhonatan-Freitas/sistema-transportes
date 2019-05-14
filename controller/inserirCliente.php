@@ -1,18 +1,20 @@
 <?php
+session_start();
 
 require_once '../conexao/conexao.php';
+require_once 'cliente.class.php';
 require_once 'clienteDao.php';
 
-$cliente = [];
+$cliente = new Cliente();
+$clienteDao = new ClienteDao($con);
+$cliente->setNome($_POST['nome']);
+$cliente->setCpf($_POST['cpf']);
+$cliente->setTelefone($_POST['telefone']);
+$cliente->setEmail($_POST['email']);
 
-$cliente['nome'] = $_POST['nome'];
-$cliente['cpf'] = $_POST['cpf'];
-$cliente['telefone'] = $_POST['telefone'];
-$cliente['email'] = $_POST['email'];
+$clienteDao->inserirCliente($cliente);
 
-inserirCliente($cliente, $con);
-
-var_dump($_POST);
-
+header('locale: ../clienteFormulario.php');
+die();
 
 

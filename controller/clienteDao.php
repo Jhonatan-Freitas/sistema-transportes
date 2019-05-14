@@ -1,15 +1,22 @@
 
 <?php
 
+class ClienteDao{
 
-function inserirCliente($cliente, $con){
-    $nome = $cliente['nome'];
-    $cpf = $cliente['cpf'];
-    $telefone = $cliente['telefone'];
-    $email = $cliente['email'];
+    private $con;
+
+     public function __construct($con){
+        $this->con = $con;
+    }
+
+function inserirCliente(Cliente $cliente){
+    $nome = $cliente->getNome();
+    $cpf = $cliente->getCpf();
+    $telefone = $cliente->getTelefone();
+    $email = $cliente->getEmail();
 
     $query = "insert into cliente (nome, cpf, telefone, email) values(?,?,?,?)";
-    $stmt = $con->prepare($query);
+    $stmt = $this->con->prepare($query);
     $stmt->bindParam(1, $nome);
     $stmt->bindParam(2, $cpf);
     $stmt->bindParam(3, $telefone);
@@ -56,4 +63,6 @@ function editarCliente($cliente, $con){
     $stmt->bindParam(4, $email);
     $stmt->bindParam(5, $id);
     $stmt->execute();
+}
+
 }
