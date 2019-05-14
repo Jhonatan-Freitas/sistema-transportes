@@ -34,7 +34,7 @@
 			       			 	<li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
 				    			<li class="nav-item"><a class="nav-link" href="#funcionario">Funcionários</a></li>
 				    			<li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-								<li class="nav-item"><a class="nav-link" href="clienteFormulario.php">Entrar</a></li>
+								<li class="nav-item"><a class="nav-link" href="cadCliente.php">Entrar</a></li>
 			      			</ul>
 			    		</div>
 			  		</nav>
